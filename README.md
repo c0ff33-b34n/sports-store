@@ -1,4 +1,7 @@
-# SportsStore
+# Sports Store
+A simple but realistic e-commerce site created with **Angular** and **Bootstrap**
+
+Created by Adam Freeman, featured in the book Pro Angular 9 published by Apress.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.2.
 
