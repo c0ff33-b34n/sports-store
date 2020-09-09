@@ -3,11 +3,12 @@ import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { ModelModule } from '../model/model.module';
 import { StoreComponent } from './store.component';
+import { CounterDirective } from './counter.directive';
 
 
 
 @NgModule({
-  declarations: [StoreComponent],
+  declarations: [StoreComponent, CounterDirective],
   imports: [
     ModelModule, BrowserModule, FormsModule
   ],
