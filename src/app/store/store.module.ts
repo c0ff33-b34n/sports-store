@@ -4,11 +4,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { ModelModule } from '../model/model.module';
 import { StoreComponent } from './store.component';
 import { CounterDirective } from './counter.directive';
+import { CartSummaryComponent } from './cart-summary.component';
 
 
 
 @NgModule({
-  declarations: [StoreComponent, CounterDirective],
+  declarations: [StoreComponent, CounterDirective, CartSummaryComponent],
   imports: [
     ModelModule, BrowserModule, FormsModule
   ],
