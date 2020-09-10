@@ -8,6 +8,8 @@ import { StoreComponent } from './store/store.component';
 import { CartDetailComponent } from './store/cart-detail.component';
 import { CheckoutComponent } from './store/checkout.component';
 import { StoreFirstGuard } from './store-first.guard';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [AppComponent],
@@ -27,7 +29,8 @@ import { StoreFirstGuard } from './store-first.guard';
         canActivate: [StoreFirstGuard]
       },
       { path: '**', redirectTo: '/store' }
-    ])
+    ]),
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [StoreFirstGuard],
   bootstrap: [AppComponent]
