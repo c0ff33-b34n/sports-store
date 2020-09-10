@@ -22,7 +22,7 @@ app.use(bodyParser.json());
 app.use(auth);
 app.use("/api", router);
 app.use(history());
-app.use("/", express.static("./dist/SportsStore"));
+app.use("/", express.static("./dist/sports-store"));
 
 app.listen(80, 
     () => console.log("HTTP Server running on port 80"));
